@@ -1,9 +1,9 @@
 def sort_list(l):
     n = len(l)
-    i = 1
-    while i<len(l):
+    i = 0
+    while i<n:
         j = 0
-        while j<=len(l)-i-1:
+        while j< n-i-1:
             if l[j+1] < l[j]:
                 l[j], l[j+1] = l[j+1], l[j]
             j += 1
