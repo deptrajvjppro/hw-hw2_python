@@ -1,12 +1,11 @@
 import time
 
-
 def calculate_time(func):
     def wrapper(*args, **kw):
         start = time.time()
         result = func(*args, **kw)
         stop = time.time()
-        print(f'Total execution time is {int((stop - start))}')
+        print(f'Total time {int((stop - start))}')
         return result
     return wrapper
 
