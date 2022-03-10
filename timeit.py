@@ -1,15 +1,15 @@
 import time
 
-def calculate_time(func):
+def time_it(func):
     def wrapper(*args, **kw):
-        start = time.time()
-        result = func(*args, **kw)
-        stop = time.time()
-        print(f'Total time {int((stop - start))}')
-        return result
+        start_time = time.time()
+        rs = func(*args, **kw)
+        end_time = time.time()
+        print(f'Total time {int((end_time - start_time))}')
+        return rs
     return wrapper
 
-@calculate_time
+@time_it
 def hello():
     for i in range (int(10e7)):
         pass
