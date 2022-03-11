@@ -15,11 +15,18 @@ def document_analyzer():
     
     sort_orders = sorted(d.items(), key=lambda x: (-x[1], x[0]))
     first_five = list(sort_orders)[:5]
+
+    print()
     for i in first_five:
         print(f'{i[0]}: {i[1]}')
   
 
 document_analyzer()
+
+
+
+
+
 
 
 
