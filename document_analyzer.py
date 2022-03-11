@@ -28,6 +28,6 @@ sort_orders = sorted(d.items(), key=lambda x: (-x[1], x[0]))
 first_five = list(sort_orders)[:5]
 
 for i in first_five:
-    print(i[0], ": ", i[1])
+    print(f'{i[0]}: {i[1]}')
 
 
