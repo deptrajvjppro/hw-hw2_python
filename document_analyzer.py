@@ -1,7 +1,7 @@
 import string
 
 def document_analyzer():
-    file = open("document.txt", encoding="utf8")
+    file = open("document.txt","r",encoding="utf8")
    
     for line in file:
         line = line.translate(line.maketrans("", "", string.punctuation))
