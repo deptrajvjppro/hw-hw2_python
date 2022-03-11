@@ -5,7 +5,7 @@ def document_analyzer():
    
     for line in file:
         line = line.translate(line.maketrans("", "", string.punctuation))
-        words = line.split(" ")
+        words = line.split()
     
     d = {}
     for word in words:
