@@ -1,7 +1,7 @@
 import string
 
-def document_analyzer(filename):
-    file = open(filename, encoding="utf8")
+def document_analyzer():
+    file = open("document.txt", encoding="utf8")
     d = {}
     for line in file:
         line = line.strip()
@@ -19,7 +19,7 @@ def document_analyzer(filename):
         print(f'{i[0]}: {i[1]}')
   
 
-document_analyzer("document.txt")
+document_analyzer()
 
 
 
