@@ -1,10 +1,12 @@
 import string
 
 def document_analyzer():
-    with open("document.txt",'r', encoding="utf-8") as file:
-        for line in file:
-            line = line.translate(line.maketrans("", "", string.punctuation))
-            words = line.split()
+    file = open("document.txt",'r', encoding="utf-8") 
+
+    for line in file:
+        line = line.strip()
+        line = line.translate(line.maketrans("", "", string.punctuation))
+        words = line.split()
     
     d = {}
     for word in words:
@@ -22,6 +24,11 @@ def document_analyzer():
   
 
 document_analyzer()
+
+
+
+
+
 
 
 
